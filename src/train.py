@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score
 from src.preprocess import preprocess_data
 
 def train_model():
-    df = preprocess_data("data/sample.csv")
+    df = preprocess_data("wrong_path.csv")
 
     X = df.drop("bought", axis=1)
     y = df["bought"]
