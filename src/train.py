@@ -2,7 +2,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-from preprocess import preprocess_data
+from src.preprocess import preprocess_data
 
 def train_model():
     df = preprocess_data("data/sample.csv")
@@ -24,3 +24,4 @@ def train_model():
 
 if __name__ == "__main__":
     train_model()
+
